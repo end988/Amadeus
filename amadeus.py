@@ -1,3 +1,5 @@
+
+
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from datetime import datetime
@@ -7,7 +9,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "Your OpenAI key"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +17,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "Your Telegram Key"
+    tgkey = "5916531838:AAG0unH7uORZJ-kkWuy3ouB4gVUrayReDgY"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -36,7 +38,7 @@ cache = None
 qcache = None
 chat_log = None
 botname = 'Makise Kurisu'
-username = 'Your name here'
+username = '@P_S_E'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
